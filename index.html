@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cohost Icecast Webring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="/plyr.css" />
+    <script src="/plyr.js"></script>
+    <script src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="stations">
+        <div class="station" data-url="https://radio.backtracks.co:8443/stream">
+          <h2><a href="https://radio.backtracks.co">Radio Backtracks</a></h2>
+          <p>
+            A "slow playlist", thematically-linked tracks forming a slow mass on
+            the horizon. Thinking. Waiting.
+          </p>
+        </div>
+        <div class="station" data-url="https://radio.crimes.consulting/arda">
+          <h2>Martin Shaw ASMR 14 Hours</h2>
+          <p>who up going to nan dungortheb</p>
+        </div>
+        <div
+          class="station"
+          data-url="https://2-warcraft-2-radio.glitch.me/stream"
+        >
+          <h2>
+            <a href="https://2-warcraft-2-radio.glitch.me"
+              >2 Warcraft 2 Radio</a
+            >
+          </h2>
+          <p>Kinda speaks for itself</p>
+        </div>
+        <div class="station" data-url="http://radio.blood.church:8000/stream">
+          <h2><a href="https://radio.blood.church">BLOOD CHURCH RADIO</a></h2>
+          <p>LEGALIZE NUCLEAR BOMBS</p>
+        </div>
+        <div class="station" data-url="https://radio.xd.wtf:8860/stream">
+          <h2>
+            <a href="https://radio.xd.wtf/">snailJAM</a>
+          </h2>
+          <p>
+            a curated mix of electronic music, jazz, glitch pop, ambient, the
+            odd game soundtrack, and more
+          </p>
+        </div>
+        <div
+          class="station"
+          data-url="http://radio.katherinemorayati.com:8000/stream"
+        >
+          <h2>
+            <a href="http://radio.katherinemorayati.com"
+              >spiritual communion with sunfly</a
+            >
+          </h2>
+          <p>
+            moods may include: last call in moonside; chamber of frosted glass;
+            vibing with swords; cyberevenge; used to be a pop writer; or
+            whatever I want to play
+          </p>
+        </div>
+        <div class="station" data-url="https://radio.boodoo.co/stream.ogg">
+          <h2>
+            <a href="https://cohost.org/boodoo/tagged/boodooradio"
+              >BooDooRadio</a
+            >
+          </h2>
+          <p>
+            Could evolve into anything! but to start it's ~8 hours of mostly
+            prog and jazz
+          </p>
+        </div>
+        <div class="station" data-url="https://beepboop.johnholdun.com/stream">
+          <h2>
+            <a href="https://beepboop.johnholdun.com/"
+              >jam holdin’</a
+            >
+          </h2>
+          <p>
+            Improvised synth performances by John Holdun
+          </p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <h2>Select a station</h2>
+        <input type="range" min="1" max="100" value="1" class="dial hidden" list="stations"/>
+        <datalist id="stations">
+        </datalist>
+      </div>
+
+      <div class="player">
+        <audio controls autoplay preload="false" id="player">
+          <source
+            id="stream1"
+            src="https://radio.backtracks.co:8443/stream"
+            type="audio/mpeg"
+          />
+          <source
+            id="stream2"
+            src="https://radio.backtracks.co:8433/stream"
+            type="audio/mp3"
+          />
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
